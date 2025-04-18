@@ -1,0 +1,64 @@
+/* Full-screen styling with a modern gradient background */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2); /* Beautiful gradient */
+  font-family: 'Poppins', sans-serif;
+  /* color: white; */
+}
+
+/* Title styling with a bold and stylish font */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+/* Subtitle text with a sleek appearance */
+.subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+/* Centered Editor Container */
+.editor-wrapper {
+  width: 80%;
+  height: 80vh;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Smooth shadow effect */
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth hover effect on the editor */
+.editor-wrapper:hover {
+  transform: scale(1.02);
+}
+
+/* Quill Editor */
+.editor-container {
+  height: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .editor-wrapper {
+    width: 95%;
+    height: 75vh;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
